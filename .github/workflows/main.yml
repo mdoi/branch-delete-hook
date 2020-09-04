@@ -1,4 +1,4 @@
-name: something do when branch is deleted
+name: do something when branch is deleted
 
 on:
   delete:
