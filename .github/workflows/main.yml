@@ -6,7 +6,7 @@ on:
       - 'delete_hook/**'
     
 jobs:
-  build:
+  delete_hook:
     runs-on: ubuntu-latest
 
     steps:
