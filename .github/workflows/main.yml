@@ -1,0 +1,15 @@
+name: something do when branch is deleted
+
+on:
+  delete:
+    branches: [ delete_hook/** ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo "delete hook"
