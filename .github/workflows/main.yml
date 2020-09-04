@@ -18,4 +18,5 @@ jobs:
         run: |
           echo "$GITHUB_CONTEXT"
           echo $GITHUB_REF
+          echo ${{ github.event.ref }}
 
