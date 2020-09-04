@@ -15,5 +15,5 @@ jobs:
       - name: Run a one-line script
         run: |
           echo ${{ github.event.ref }}
-          #        if: contains(github.event.ref, 'test/*')
+        if: startWith(github.event.ref, 'test/')
 
