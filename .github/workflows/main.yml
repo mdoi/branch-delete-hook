@@ -12,6 +12,6 @@ jobs:
 
       - name: Run a one-line script
         run: |
-          echo ${{ github.event.ref }}
+          echo Run only when branch "test/*" is deleted
         if: startsWith(github.event.ref, 'test/')
 
