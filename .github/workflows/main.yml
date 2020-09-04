@@ -2,7 +2,8 @@ name: do something when branch is deleted
 
 on:
   delete:
-    branches: [ delete_hook/** ]
+    branches:
+      - 'delete_hook/**'
     
 jobs:
   build:
